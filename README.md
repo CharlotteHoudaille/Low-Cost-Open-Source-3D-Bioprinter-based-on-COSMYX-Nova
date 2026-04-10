@@ -1,14 +1,14 @@
 # Low-Cost-Open-Source-3D-Bioprinter-based-on-COSMYX-Nova
 ## Project Overview
-This project explores the transformation of a conventional FDM 3D printer (COSMYX Nova) into a low-cost extrusion-based bioprinter capable of printing hydrogels and bio-derived materials.  The objective is to make bioprinting technologies accessible to open-source and DIY research communities.
+This project explores the transformation of a conventional FDM 3D printer (COSMYX Nova) into a low-cost extrusion-based bioprinter capable of printing hydrogels and bio-derived materials. The objective is to make bioprinting technologies accessible to open-source and DIY research communities.
 
 This work includes:
 - hardware modification of the printer
 - firmware and software debugging
 - slicer calibration
-- hydrogel formulation
-- biological material experiments
-- future hardware and research perspectives
+- test hydrogel formulation
+- biological material experiment
+- hardware improvements
 
 ---
 
@@ -16,7 +16,6 @@ This work includes:
 - Transform a standard 3D printer into a syringe-based bioprinter
 - Print extrusion-based hydrogels
 - Test biologically derived materials such as spirulina
-- Explore post-printing biological growth workflows
 - Document a reproducible low-cost setup
 
 ---
@@ -28,19 +27,15 @@ The original FDM extruder was replaced by a **custom syringe extrusion system**.
 
 The printer’s original stepper motor drives:
 - a gear train
-- a central threaded rod / screw
-- a moving white carriage
-
-This carriage pushes the syringe piston vertically to control extrusion flow.
+- a central screw
+- a moving white carriage (syringe holder to control extrusion flow)
 
 ### Main Components
 - COSMYX Nova 3D printer
 - custom 3D-printed syringe holder
 - custom 3D-printed gear mechanism
-- vertical screw / threaded rod
-- syringe piston pusher
+- vertical screw
 - syringe + nozzle
-- Raspberry Pi with OctoPrint / Klipper
 
 ---
 
@@ -50,7 +45,7 @@ This carriage pushes the syringe piston vertically to control extrusion flow.
 - COSMYX Nova printer
 - stepper motor (existing printer motor)
 - 3D-printed gears
-- threaded rod / bolt
+- screw
 - syringe holder
 - syringe piston pusher
 - 20 mL syringe
@@ -60,6 +55,8 @@ This carriage pushes the syringe piston vertically to control extrusion flow.
 - SD card
 
 Detailed BOM available in `/hardware/BOM_hardware.md`
+The 3D files for the different parts of the printhead can be found in the hardware branch.
+Please note that the full assembly also requires M8 nuts and bolts, along with two aluminum support rods (8.30 mm diameter) with lengths of 106.5 mm and 74.50 mm, which must be inserted into the syringeholder part.
 
 ---
 
