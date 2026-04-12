@@ -1,4 +1,104 @@
-# Low-Cost-Open-Source-3D-Bioprinter-based-on-COSMYX-Nova
+# Low-Cost Open-Source 3D Bioprinter based on COSMYX Nova
+
+## Project Overview
+This project explores the transformation of a conventional **FDM 3D printer (COSMYX Nova)** into a **low-cost syringe-based bioprinter** capable of printing hydrogels and bio-derived materials.
+
+The objective is to make bioprinting technologies more accessible to **open-source, DIY, and low-budget research communities**.
+
+The project covers:
+- custom hardware modification
+- firmware and machine debugging
+- slicer calibration
+- hydrogel testing
+- biological material experiments
+- future hardware and research improvements
+
+---
+
+## Project Goals
+- convert a standard 3D printer into a syringe-based bioprinter
+- print extrusion-based hydrogels
+- test bio-derived materials such as spirulina
+- document a reproducible low-cost setup
+
+---
+
+## Repository Structure
+
+### `/hardware`
+Contains all mechanical documentation related to the custom print head:
+- CAD files
+- STL / fabrication files
+- assembly guide
+- hardware description
+- print head architecture
+
+---
+
+### `/firmware`
+Contains all software and machine configuration documentation:
+- OctoPrint / Klipper setup
+- firmware modifications
+- temperature override
+- bed mesh correction
+- SD card reflashing and debugging notes
+
+---
+
+### `/slicer`
+Contains the slicing workflow and calibration files:
+- Orca Slicer project file (`.3mf`)
+- calibration parameters
+- printing methodology
+- key parameters for hydrogel extrusion
+
+---
+
+### `/test_hydrogels`
+Contains all hydrogel formulations and print tests:
+- CMC–alginate recipe and results
+- spirulina hydrogel recipe and results
+- photos and videos of gels and printed structures
+- experimental observations
+
+---
+
+## System Summary
+The original thermoplastic extruder was replaced by a **custom syringe extrusion system**.
+
+The existing stepper motor drives:
+- a gear train
+- a vertical screw mechanism
+- a syringe holder / piston pusher
+
+This allows controlled extrusion of high-viscosity hydrogels.
+
+---
+
+## Main Experimental Results
+The project successfully demonstrated:
+- 2D hydrogel printing
+- 3D hollow and filled structures
+- proof-of-concept extrusion of spirulina-based material
+- iterative firmware and slicer calibration
+
+This work does **not yet constitute a full viability study**, but demonstrates the feasibility of low-cost hydrogel bioprinting.
+
+---
+
+## Future Contributions
+Potential future developments include:
+- improved lead screw mechanism
+- stronger syringe guidance system
+- better linear alignment
+- enhanced firmware robustness
+- plastic upcycling / filament recycling project
+
+---
+
+## Author
+Charlotte Houdaille  
+CreaTech IFT – ESILV# Low-Cost-Open-Source-3D-Bioprinter-based-on-COSMYX-Nova
 ## Project Overview
 This project explores the transformation of a conventional FDM 3D printer (COSMYX Nova) into a low-cost extrusion-based bioprinter capable of printing hydrogels and bio-derived materials. The objective is to make bioprinting technologies accessible to open-source and DIY research communities.
 
